@@ -1,0 +1,126 @@
+# -----------------------------
+# Python
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# -----------------------------
+# Virtual Environments
+# -----------------------------
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# -----------------------------
+# Jupyter Notebook
+# -----------------------------
+.ipynb_checkpoints
+
+# -----------------------------
+# Data Files
+# -----------------------------
+# *.csv
+# *.tsv
+# *.log
+# *.json
+# *.xml
+# *.yaml
+# *.yml
+# *.dat
+# *.db
+# *.sqlite
+# *.h5
+# *.parquet
+# *.pkl
+# *.joblib
+
+# Large datasets (optional)
+# data/
+datasets/
+inputs/
+outputs/
+results/
+
+# -----------------------------
+# Pytest / Coverage
+# -----------------------------
+.coverage
+.tox/
+.nox/
+.cache/
+pytest_cache/
+htmlcov/
+
+# -----------------------------
+# Distribution / Packaging
+# -----------------------------
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+pip-wheel-metadata/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# -----------------------------
+# IDE / Editors
+# -----------------------------
+# VS Code
+.vscode/
+# PyCharm
+.idea/
+# Jupyter Lab
+.jupyter/
+# Spyder
+.spyderproject
+.spyproject
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# -----------------------------
+# Logs and Temp Files
+# -----------------------------
+*.log
+*.tmp
+*.temp
+*.bak
+
+# -----------------------------
+# OS-specific
+# -----------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# -----------------------------
+# Others
+# -----------------------------
+# Ignore model files and checkpoints
+*.ckpt
+*.pth
+*.pt
+*.hdf5
+
+# Ignore local config files
+config.yaml
+.env.local
+secrets.json
