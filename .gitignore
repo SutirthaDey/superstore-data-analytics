@@ -46,7 +46,6 @@ venv.bak/
 # data/
 datasets/
 inputs/
-outputs/
 results/
 
 # -----------------------------
