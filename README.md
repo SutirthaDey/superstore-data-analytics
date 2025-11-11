@@ -73,10 +73,7 @@ FROM superstore;
 **Insight:**  
 Gives an overview of the **overall business revenue** and **profit margins**, providing a quick summary of company performance.
 
-🖼️ _Screenshot Placeholder:_  
-_Add a summary card or table image here showing total sales and profit._
-
----
+## ![Business Metrics](https://github.com/SutirthaDey/superstore-data-analytics/blob/main/outputs/basic-metrics.png?raw=true)
 
 ### 2️⃣ Regional Performance Analysis
 
@@ -92,8 +89,7 @@ GROUP BY region;
 **Insight:**  
 Compares **sales and profit performance** across regions, identifying **high-performing markets** and **areas needing improvement**.
 
-🖼️ _Screenshot Placeholder:_  
-_Add a map or grouped bar chart comparing regions._
+![Regional Performance](https://github.com/SutirthaDey/superstore-data-analytics/blob/main/outputs/sales_by_region.png?raw=true)
 
 ### 3️⃣ Top 5 Most Selling Products
 
@@ -108,28 +104,25 @@ LIMIT 5
 **Insight:**  
 Reveals which top 5 **product** generate the most **revenue and profit**, aiding strategic marketing and assortment planning.
 
-🖼️ _Screenshot Placeholder:_  
-_Add a pie or bar chart comparing category-wise profits._
+![Top 5 Most Selling Products](https://github.com/SutirthaDey/superstore-data-analytics/blob/main/outputs/top_5_products.png?raw=true)
 
 ---
 
-### 4️⃣ Category-Wise Profitability
+### 4️⃣ Category-Wise Sales
 
 ```sql
 SELECT
     category,
-    SUM(sales) AS total_sales,
-    SUM(profit) AS total_profit
+    SUM(sales) AS total_sales
 FROM superstore
 GROUP BY category
 ORDER BY total_profit DESC;
 ```
 
 **Insight:**  
-Analyzes **profitability across product categories**, identifying which categories contribute most to **overall revenue and profit**.  
-Helps management decide where to **prioritize investment**, **expand product lines**, or **introduce discounts** for underperforming categories.
+Analyzes **sales across product categories**, identifying which categories contribute most to **overall revenue**.
 
----
+## ![Top 5 Most Selling Products](https://github.com/SutirthaDey/superstore-data-analytics/blob/main/outputs/sales_by_category.png?raw=true)
 
 ### 5️⃣ Year-on-Year (YoY) Growth Percentage
 
@@ -162,8 +155,7 @@ FROM (
 Calculates **year-on-year profit growth percentages**, revealing how the business has **performed compared to the previous year**.  
 This helps evaluate **long-term profitability trends** and measure **sustained business growth** over time.
 
-🖼️ _Screenshot Placeholder:_  
-_Add a line or bar chart comparing yearly profits and growth percentage._
+![YoY growth](https://github.com/SutirthaDey/superstore-data-analytics/blob/main/outputs/yoy_growth.png?raw=true)
 
 ---
 
@@ -182,6 +174,8 @@ ORDER BY month;
 **Insight:**  
 Identifies **monthly sales and profit variations**, helping businesses recognize **seasonal trends** and plan inventory or promotions accordingly.
 
+![Monthly Profit Trends](https://github.com/SutirthaDey/superstore-data-analytics/blob/main/outputs/monthOnMonth.png?raw=true)
+
 ---
 
 ### 7️⃣ Percentage Break-Up of Sales by Customer Segment
@@ -199,8 +193,7 @@ ORDER BY SUM(sales) DESC;
 Shows the **sales contribution percentage by customer segment** (e.g., Consumer, Corporate, Home Office).  
 This helps identify which **customer group drives the highest revenue** and where to **focus marketing or retention strategies**.
 
-🖼️ _Screenshot Placeholder:_  
-_Add a pie chart showing sales share across customer segments._
+![Percentage Break-Up of Sales By Segment](https://github.com/SutirthaDey/superstore-data-analytics/blob/main/outputs/sales_by_segment.png?raw=true)
 
 ---
 
@@ -239,9 +232,6 @@ plt.ylabel("Total Profit")
 plt.grid(True)
 plt.show()
 ```
-
-🖼️ _Screenshot Placeholder:_  
-_Add your generated visualization screenshot here._
 
 ---
 
